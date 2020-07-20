@@ -1,0 +1,75 @@
+header {
+  font-family: Minecraft;
+  font-size: 24px;
+  text-align: center;
+}
+
+body {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  margin: 10px 250px;
+  border: 1px solid lightgrey;
+  display: grid;
+  grid-template-rows: 20vh 60vh 10vh;
+  grid-gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.divRange {
+  font-size: 18px;
+  text-align: right;
+  margin-right: 6em;
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 0.5em;
+  border-radius: 5em;
+  left: 4em;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #d3d3d3;
+  cursor: pointer;
+}
+
+input[id='rValueRange'] {
+  background-color: #f10a0a;
+}
+
+input[id='gValueRange'] {
+  background-color: #0af10a;
+}
+
+input[id='bValueRange'] {
+  background-color: #2d0af1;
+}
+
+input[type='text'] {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  width: 4em;
+}
+
+.finalColor {
+  background-color: black;
+  border: 1px solid lightgrey;
+  margin: 30px auto;
+}
+
+footer {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+}

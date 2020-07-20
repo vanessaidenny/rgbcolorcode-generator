@@ -1,0 +1,46 @@
+window.addEventListener('load', start);
+
+//input range
+let rValueRange = document.querySelector('#rValueRange');
+let gValueRange = document.querySelector('#gValueRange');
+let bValueRange = document.querySelector('#bValueRange');
+
+//input text
+let rValueInput = document.querySelector('#rValueInput');
+let gValueInput = document.querySelector('#gValueInput');
+let bValueInput = document.querySelector('#bValueInput');
+
+//canvas background color
+let finalColor = document.querySelector('.finalColor');
+
+function start() {
+  rValueRange.addEventListener('input', rValueChange);
+  gValueRange.addEventListener('input', gValueChange);
+  bValueRange.addEventListener('input', bValueChange);
+}
+
+function rValueChange(event) {
+  rValueInput.value = rValueRange.value;
+  changeColorBg();
+}
+
+function gValueChange(event) {
+  gValueInput.value = gValueRange.value;
+  changeColorBg();
+}
+
+function bValueChange(event) {
+  bValueInput.value = bValueRange.value;
+  changeColorBg();
+}
+
+function changeColorBg() {
+  finalColor.style.backgroundColor =
+    'rgb(' +
+    rValueRange.value +
+    ', ' +
+    gValueRange.value +
+    ', ' +
+    bValueRange.value +
+    ')';
+}

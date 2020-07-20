@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="./img/navicon.png" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="shortcut icon" type="creeper/css" href="./css/creeper.css" />
+    <link
+      href="//db.onlinewebfonts.com/c/6ab539c6fc2b21ff0b149b3d06d7f97c?family=Minecraft"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>RGB Color Code Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>RGB Color Code Generator</h1>
+      </header>
+      <main>
+        <div class="divRange">
+          <label for="r">(R) Red: </label>
+          <input type="range" id="rValueRange" value="0" min="0" max="255" />
+          <input type="text" id="rValueInput" value="0" disabled readonly />
+        </div>
+        <div class="divRange">
+          <label for="g">(G) Green: </label>
+          <input type="range" id="gValueRange" value="0" min="0" max="255" />
+          <input type="text" id="gValueInput" value="0" disabled readonly />
+        </div>
+        <div class="divRange">
+          <label for="b">(B) Blue: </label>
+          <input type="range" id="bValueRange" value="0" min="0" max="255" />
+          <input type="text" id="bValueInput" value="0" disabled readonly />
+        </div>
+        <!-- Final Color - Creeper Bg -->
+        <script defer src="./js/creeper_canvas.js"></script>
+        <canvas
+          class="finalColor"
+          title="creeper"
+          width="200"
+          height="210"
+        ></canvas>
+        <script defer src="./js/change_input.js"></script>
+      </main>
+      <footer>
+        <p class="copyright">
+          &copy; Desenvolvido por Vanessa Denny - IGTI Bootcamp Desenvolvimento
+          FullStack
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
