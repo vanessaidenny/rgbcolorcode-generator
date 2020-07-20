@@ -10,6 +10,9 @@ let rValueInput = document.querySelector('#rValueInput');
 let gValueInput = document.querySelector('#gValueInput');
 let bValueInput = document.querySelector('#bValueInput');
 
+//rgb description
+let rgbInput = document.querySelector('#rgbInput');
+
 //canvas background color
 let finalColor = document.querySelector('.finalColor');
 
@@ -35,7 +38,7 @@ function bValueChange(event) {
 }
 
 function changeColorBg() {
-  finalColor.style.backgroundColor =
+  let getRgb =
     'rgb(' +
     rValueRange.value +
     ', ' +
@@ -43,4 +46,7 @@ function changeColorBg() {
     ', ' +
     bValueRange.value +
     ')';
+
+  finalColor.style.backgroundColor = getRgb;
+  rgbInput.value = getRgb;
 }
