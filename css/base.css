@@ -16,10 +16,10 @@ body {
 .container {
   margin: 10px 250px;
   border: 1px solid lightgrey;
-  background-color: rgb(85, 68, 68);
+  background-color: rgb(85, 68, 68, 0.8);
   color: rgb(240, 232, 232);
   display: grid;
-  grid-template-rows: 20vh 60vh 10vh;
+  grid-template-rows: 10vh 50vh 10vh;
   grid-gap: 20px;
   align-items: center;
   justify-content: center;
